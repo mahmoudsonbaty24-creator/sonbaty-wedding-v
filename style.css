@@ -730,3 +730,104 @@ button{
     }
 
 }
+/* ================= Reveal Animation ================= */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(70px);
+
+    transition:1s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ================= Floating Hearts ================= */
+
+.heart{
+
+    position:fixed;
+
+    bottom:-40px;
+
+    font-size:20px;
+
+    pointer-events:none;
+
+    animation:floatHeart linear forwards;
+
+    z-index:999;
+
+}
+
+@keyframes floatHeart{
+
+    from{
+
+        transform:translateY(0) scale(.7);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:translateY(-110vh) scale(1.4);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ================= Scroll Top ================= */
+
+#topBtn{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--gold);
+
+    color:#fff;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:none;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+#topBtn:hover{
+
+    transform:translateY(-5px);
+
+    background:var(--gold-dark);
+
+}
