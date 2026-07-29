@@ -831,3 +831,160 @@ button{
     background:var(--gold-dark);
 
 }
+/* Wedding Day */
+
+.wedding-day{
+
+padding:110px 8%;
+
+background:#f8f4ef;
+
+text-align:center;
+
+}
+
+.schedule-subtitle{
+
+margin-bottom:60px;
+
+color:#777;
+
+font-size:18px;
+
+}
+
+.schedule{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+.schedule-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:22px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.schedule-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.time{
+
+font-size:26px;
+
+font-family:'Great Vibes';
+
+color:#b88945;
+
+}
+
+.schedule-card h3{
+
+margin:18px 0;
+
+}
+
+/* Ending */
+
+.ending{
+
+padding:120px 8%;
+
+background:#fffaf6;
+
+}
+
+.ending-content{
+
+max-width:750px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+.ending-photo{
+
+width:260px;
+
+height:260px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+margin-bottom:45px;
+
+}
+
+.quote{
+
+font-family:'Great Vibes';
+
+font-size:46px;
+
+color:#b88945;
+
+line-height:1.5;
+
+margin:30px auto;
+
+}
+
+.message{
+
+font-size:19px;
+
+line-height:2;
+
+max-width:620px;
+
+margin:auto;
+
+color:#666;
+
+}
+
+.ending h3{
+
+margin-top:45px;
+
+font-size:42px;
+
+font-family:'Great Vibes';
+
+}
+
+.ending small{
+
+display:block;
+
+margin-top:15px;
+
+letter-spacing:4px;
+
+color:#999;
+
+}
