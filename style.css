@@ -42,25 +42,21 @@ html{
 }
 
 body{
-
     background:var(--bg);
-
     color:var(--text);
-
     font-family:'Cairo',sans-serif;
-
     overflow-x:hidden;
-
     line-height:1.8;
-
+    width:100%;
+    min-width:320px;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
 }
 
 img{
-
     display:block;
-
-    width:100%;
-
+    max-width:100%;
+    height:auto;
 }
 
 a{
@@ -98,8 +94,8 @@ button{
 }
 
 .intro-card{
-
     width:min(92%,520px);
+    margin:20px;
 
     background:rgba(255,255,255,.55);
 
@@ -119,7 +115,7 @@ button{
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:28px;
+    font-size:clamp(20px,5vw,28px);
 
     font-weight:400;
 
@@ -133,7 +129,7 @@ button{
 
     font-family:'Great Vibes',cursive;
 
-    font-size:92px;
+     font-size:clamp(56px,11vw,92px);
 
     color:var(--gold-dark);
 
@@ -151,7 +147,7 @@ button{
 
 .intro-card p{
 
-    font-size:19px;
+    font-size:clamp(15px,3vw,19px);
 
     margin-bottom:35px;
 
@@ -201,7 +197,9 @@ button{
 
     position:relative;
 
-    height:100vh;
+    min-height:100svh;
+    min-height:100dvh;
+    height:auto;
 
     display:flex;
 
@@ -258,6 +256,8 @@ button{
     color:#fff;
 
     padding:20px;
+    width:min(95%,900px);
+    margin:auto;
 
     animation:fadeUp 1.4s ease;
 
@@ -267,7 +267,7 @@ button{
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:34px;
+     font-size:clamp(20px,4vw,34px);
 
     font-weight:400;
 
@@ -281,7 +281,7 @@ button{
 
     font-family:'Great Vibes',cursive;
 
-    font-size:120px;
+    font-size:clamp(54px,12vw,120px);
 
     font-weight:400;
 
@@ -301,7 +301,7 @@ button{
 
 .hero-text p{
 
-    font-size:24px;
+    font-size:clamp(16px,3vw,24px);
 
     letter-spacing:2px;
 
@@ -986,5 +986,244 @@ margin-top:15px;
 letter-spacing:4px;
 
 color:#999;
+
+}
+/* =====================================================
+   Responsive
+=====================================================*/
+
+@media (max-width:992px){
+
+.hero{
+
+padding:90px 20px;
+
+}
+
+.timeline{
+
+padding:90px 20px;
+
+}
+
+.event{
+
+padding:35px;
+
+}
+
+.timer div{
+
+width:120px;
+
+height:120px;
+
+}
+
+.timer span{
+
+font-size:44px;
+
+}
+
+}
+
+/* ======================= */
+
+@media (max-width:768px){
+
+#countdown h2,
+
+.timeline h2{
+
+font-size:54px;
+
+}
+
+.hero-text h1{
+
+font-size:70px;
+
+}
+
+.hero-text h3{
+
+font-size:24px;
+
+}
+
+.hero-text p{
+
+font-size:18px;
+
+letter-spacing:1px;
+
+}
+
+.timer{
+
+gap:15px;
+
+}
+
+.timer div{
+
+width:100px;
+
+height:100px;
+
+}
+
+.timer span{
+
+font-size:36px;
+
+}
+
+.timer small{
+
+font-size:14px;
+
+}
+
+.event{
+
+padding:28px;
+
+}
+
+.event h3{
+
+font-size:28px;
+
+}
+
+.event p{
+
+font-size:18px;
+
+}
+
+.ending-photo{
+
+width:200px;
+
+height:200px;
+
+}
+
+.quote{
+
+font-size:36px;
+
+}
+
+.message{
+
+font-size:17px;
+
+}
+
+}
+
+/* ======================= */
+
+@media (max-width:480px){
+
+.intro-card{
+
+padding:35px 20px;
+
+}
+
+.hero{
+
+padding-top:80px;
+
+}
+
+.hero-text h1{
+
+font-size:54px;
+
+}
+
+.hero-text h3{
+
+font-size:20px;
+
+}
+
+.hero-text p{
+
+font-size:16px;
+
+}
+
+.hero-text button{
+
+width:100%;
+
+max-width:260px;
+
+}
+
+.timer{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.timer div{
+
+width:100%;
+
+height:95px;
+
+}
+
+.schedule{
+
+grid-template-columns:1fr;
+
+}
+
+.schedule-card{
+
+padding:25px;
+
+}
+
+.event{
+
+padding:22px;
+
+}
+
+.icon{
+
+width:70px;
+
+height:70px;
+
+font-size:28px;
+
+}
+
+.quote{
+
+font-size:30px;
+
+}
+
+.message{
+
+font-size:16px;
+
+line-height:1.8;
+
+}
 
 }
